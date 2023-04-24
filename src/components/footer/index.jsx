@@ -15,6 +15,7 @@ export default function Footer() {
                 <h2 className="Gras">16410 Torsac</h2>
             </div>
             <div className="footer__infos">
+                <img src="../../public/radreams.png" alt="Logo radreams" />
                 <p>RA DREAMS | <Link to="" className="footer__infos__links">Sophrologie</Link> | <Link to="" className="footer__infos__links">Coaching</Link> | <Link to="" className="footer__infos__links">Hypnose</Link> | <Link to="" className="footer__infos__links">Politique de Confidentialité</Link> | <Link to="" className="footer__infos__links">Mentions légales</Link> | Un site réalisé par PEC | ©2022</p>
             </div>
         </footer>
