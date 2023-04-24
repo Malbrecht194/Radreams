@@ -3,14 +3,16 @@ import "./tools.scss"
 import Button from "../Button/main"
 
 
-export default function Tools({tools}) {
+export default function Tool({ tool }) {
     return (
-        <article className="toolCard">
-            <img src="" alt="" />
-            <h3>{tools.title}</h3>
-            <p>{tools.content}</p>
-            <Button buttonTitle='En savoir plus' buttonLink='/'/>
-
-        </article>
+        <>
+            <article className="toolCard">
+                <img src={tool.picture} alt={tool.alt} className="toolCard__img" />
+                <h3 className="toolCard__title aref">{tool.title}</h3>
+                <p className="toolCard__content aref">{tool.content}</p>
+                <Button buttonTitle='En savoir plus' buttonLink='/' className="moreButton" />
+            </article>
+            
+        </>
     )
 }
