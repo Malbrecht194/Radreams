@@ -15,3 +15,9 @@
         @content;
     }
 }
+
+@mixin goldendegradas {
+    background: linear-gradient(90deg,#462523 27%,#cb9b51 35%,#f6e27a 40%,#f6f2c0 50%,#f6e27a 60%,#cb9b51 65%,#462523 73%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
