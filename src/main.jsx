@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import {createBrowserRouter, RouterProvider} from 'react-router-dom'
+import "./index.scss"
 
 // ---- Imports des pages ---- // 
 import Error404 from './pages/Error404'
