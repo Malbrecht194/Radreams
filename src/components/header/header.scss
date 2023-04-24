@@ -19,8 +19,7 @@
         padding-bottom: 25px;
         font-size: x-large;
         background: linear-gradient(90deg,#462523 73%,#cb9b51 75%,#f6e27a 80%,#f6f2c0 85%,#f6e27a 90%,#cb9b51 95%,#462523 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        @include goldendegradas;
     }
     &__nav{
         display: flex;
