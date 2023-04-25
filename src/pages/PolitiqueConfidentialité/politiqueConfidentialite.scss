@@ -1,17 +1,15 @@
 @import '/Radreams/src/scss/utils/variables.scss';
-.container {
+.politiqueContainer {
     display: flex;
     flex-direction: column;
     padding: 3rem;
-}
-
-h3 {
-    margin: 2rem 0 1rem;
-    font-size: xx-large;
-}
-
-p{
-    font-size: x-large;
+    &__title{
+        margin: 2rem 0 1rem;
+        font-size: xx-large;
+    }
+    &__content{
+        font-size: x-large;
+    }
 }
 
 a{
