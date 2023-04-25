@@ -1,0 +1,18 @@
+@import '../../scss/utils/variables.scss';
+@import '../../scss/utils/mixins.scss';
+
+.politiqueContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    &__title{
+        @include textTitle();
+    }
+    &__content{
+        font-size: x-large;
+    }
+}
+
+a{
+    color: map-get($map: $colors, $key: couleurPrimaire );
+}

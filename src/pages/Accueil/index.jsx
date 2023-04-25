@@ -1,16 +1,23 @@
 import { useLoaderData } from "react-router-dom"
-import Button from "../../components/Button/main"
+import Button from "../../components/Button"
 import "./accueil.scss"
 import Tools from "../../components/tools"
 import Banner from "../../components/banner"
+import BigBanner from "../../components/bigBanner"
+import bigBannerImg from "../../assets/images/BandeauAccueil.jpg"
 
 export default function Accueil() {
     const tools = useLoaderData() // loader pour charger les textes des outils de l'acccueil
     return (
         <>
-            
+            <section className="introduction">
+                <BigBanner bigBannerImg = {bigBannerImg} bigBannerAlt="Bandeau d'accueil avec coquillage"/>
+                <Banner bannerTitle="RA DREAMS VOUS SOUHAITE LA BIENVENUE!"/>
+
+            </section>
+
             <section className="toolCards">
-                <Banner bannerTitle="Nos principaux outils" />
+                <Banner bannerTitle="NOS PRINCIPAUX OUTILS" />
                 <div className="toolCards__container">
                     {tools.map((tool, index) => (
                         <Tools key={index} tool={tool} />
