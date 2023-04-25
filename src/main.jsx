@@ -6,11 +6,13 @@ import "./index.scss"
 // ---- Imports des pages ---- // 
 import Error404 from './pages/Error404'
 import DefaultLayout from './layouts/default'
-import Accueil from './pages/Accueil'
+import Accueil, {loader as homeLoader} from './pages/Accueil'
 import Portrait from './pages/Portrait'
 import ApplicationsEtOutils from './pages/ApplicationsEtOutils'
 import Contact from './pages/Contact'
 import Deontologie from './pages/Déontologie'
+import MentionsLegales from './pages/MentionsLégales'
+import PolitiqueConfidentialite from './pages/PolitiqueConfidentialité'
 
 const router = createBrowserRouter([{ // Création du router.
     path : '/', 
@@ -18,7 +20,8 @@ const router = createBrowserRouter([{ // Création du router.
     children: [ // Ici on définit toutes les pages et les URL.
       {
         path : '',
-        element : <Accueil/>
+        element : <Accueil/>,
+        loader : homeLoader
       },
       {
         path : 'portrait',
@@ -31,6 +34,14 @@ const router = createBrowserRouter([{ // Création du router.
       {
         path : 'contact',
         element : <Contact/>
+      },
+      {
+        path : 'mentions-legales',
+        element : <MentionsLegales/>
+      },
+      {
+        path : 'politique-confidentialite',
+        element : <PolitiqueConfidentialite/>
       },
       {
         path : 'deontologie',
