@@ -1,6 +1,10 @@
 @import "../../scss/utils/variables.scss";
 @import "../../scss/utils/mixins.scss";
 
+.container{
+    display: flex;
+    justify-content: center;
+}
 .button{
     border: 3px solid white;
     border-radius: 20px;
