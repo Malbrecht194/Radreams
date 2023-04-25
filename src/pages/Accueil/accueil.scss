@@ -1,4 +1,10 @@
-.toolCards{
+.toolCards {
     display: flex;
-    justify-content: space-around;
-}
+    flex-direction: column;
+    row-gap: 3rem;
+    margin: 3rem 0 3rem;
+    &__container {
+        display: flex;
+        justify-content: space-around;
+    }
+    }
