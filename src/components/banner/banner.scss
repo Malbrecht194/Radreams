@@ -1,5 +1,5 @@
-@import '/Radreams/src/scss/utils/variables.scss';
-@import '/Radreams/src/scss/utils/mixins.scss';
+@import "../../scss/utils/variables.scss";
+@import "../../scss/utils/mixins.scss";
 
 .banner {
     background-color: map-get($map: $colors, $key: couleurPrimaire);
