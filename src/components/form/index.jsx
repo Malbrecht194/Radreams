@@ -3,7 +3,7 @@ import "./form.scss"
 export default function Form() {
     return(
         <div className="form">
-            <form className="form__container">
+            <form action="contact@radreams.com" method="get" className="form__container">
                 <div className="form__champ">
                     <label for="first-name">Nom : </label>
                     <input className="box" type="text" name="first-name" id="first-name" required></input>
