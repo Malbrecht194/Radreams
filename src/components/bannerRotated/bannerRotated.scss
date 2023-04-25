@@ -1,7 +1,7 @@
 @import "../../scss/utils/variables.scss";
 @import "../../scss/utils/mixins.scss";
 
-.banner {
+.bannerRotated {
     background-color: map-get($map: $colors, $key: couleurPrimaire);
     height: 8rem;
     border-top: 3px solid map-get($map: $colors, $key: couleurTertiaire);
