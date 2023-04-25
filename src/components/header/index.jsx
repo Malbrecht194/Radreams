@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom"
 import "./header.scss"
 
+import headerLogo from "../../assets/logo/headerRadreams.png"
+
 export default function Header() {
     return (
         <div className='header'>
            <div className='header__logo'>
-             <img src='../public/radreams.png' alt="Logo RAdreams"/>
+             <img src={headerLogo} alt="Logo RAdreams"/>
+             <p className="header__logo__text">Parce que tout commence par un rêve</p>
            </div>
             <div className="structure">
                 <div className="header__phone">
