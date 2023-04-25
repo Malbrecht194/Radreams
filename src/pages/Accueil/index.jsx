@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom"
-import Button from "../../components/Button/main"
+import Button from "../../components/Button"
 import "./accueil.scss"
 import Tools from "../../components/tools"
 import Banner from "../../components/banner"

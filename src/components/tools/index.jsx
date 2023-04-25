@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import "./tools.scss"
-import Button from "../Button/main"
+import Button from "../Button"
 
 
 export default function Tool({ tool }) {
