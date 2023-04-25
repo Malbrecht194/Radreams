@@ -10,7 +10,7 @@ export default function Accueil() {
         <>
             
             <section className="toolCards">
-                <Banner bannerTitle="Nos principaux outils" />
+                <Banner bannerTitle="NOS PRINCIPAUX OUTILS" />
                 <div className="toolCards__container">
                     {tools.map((tool, index) => (
                         <Tools key={index} tool={tool} />

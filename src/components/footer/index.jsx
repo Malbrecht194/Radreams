@@ -16,7 +16,7 @@ export default function Footer() {
             </div>
             <div className="footer__infos">
                 <img src="/radreams.png" alt="Logo radreams" />
-                <p>RA DREAMS | <Link to="" className="footer__infos__links">Sophrologie</Link> | <Link to="" className="footer__infos__links">Coaching</Link> | <Link to="" className="footer__infos__links">Hypnose</Link> | <Link to="" className="footer__infos__links">Politique de Confidentialité</Link> | <Link to="" className="footer__infos__links">Mentions légales</Link> | Un site réalisé par PEC | ©2022</p>
+                <p>RA DREAMS | <Link to="" className="footer__infos__links">Sophrologie</Link> | <Link to="" className="footer__infos__links">Coaching</Link> | <Link to="" className="footer__infos__links">Hypnose</Link> | <Link to="/politique-confidentialite" className="footer__infos__links">Politique de Confidentialité</Link> | <Link to="" className="footer__infos__links">Mentions légales</Link> | Un site réalisé par PEC | ©2022</p>
             </div>
         </footer>
     )
