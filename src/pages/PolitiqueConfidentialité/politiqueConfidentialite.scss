@@ -1,11 +1,12 @@
-@import '/Radreams/src/scss/utils/variables.scss';
+@import '../../scss/utils/variables.scss';
+@import '../../scss/utils/mixins.scss';
+
 .politiqueContainer {
     display: flex;
     flex-direction: column;
     padding: 3rem;
     &__title{
-        margin: 2rem 0 1rem;
-        font-size: xx-large;
+        @include textTitle();
     }
     &__content{
         font-size: x-large;
