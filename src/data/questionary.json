@@ -18,7 +18,6 @@
             }
         ]
     },
-    
     {
         "id": "coaching",
         "questions": [
@@ -64,7 +63,9 @@
             },
             {
                 "title": "Peut-on dormir, perdre le contrôle ou être manipulé ?",
-                "content": "En état hypnotique, nous sommes totalement conscients de notre environnement, de ce que l’on fait, de ce que l’on entend… C’est le côté méconnu de l’hypnose et de ses applications qui permet à l’imagerie du monde du spectacle (films, cabarets…) de « jouer » de l’aspect mystérieux de cette pratique. Mais ne nous y trompons pas, l’application thérapeutique n’a absolument rien à voir avec la magie d’un spectacle tout aussi distrayant et agréable qu’il soit."
+                "content": [
+                    "En état hypnotique, nous sommes totalement conscients de notre environnement, de ce que l’on fait, de ce que l’on entend… C’est le côté méconnu de l’hypnose et de ses applications qui permet à l’imagerie du monde du spectacle (films, cabarets…) de « jouer » de l’aspect mystérieux de cette pratique. Mais ne nous y trompons pas, l’application thérapeutique n’a absolument rien à voir avec la magie d’un spectacle tout aussi distrayant et agréable qu’il soit."
+                ]
             }
         ]
     }
