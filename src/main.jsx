@@ -8,7 +8,7 @@ import Error404 from './pages/Error404'
 import DefaultLayout from './layouts/default'
 import Accueil, {loader as homeLoader} from './pages/Accueil'
 import Portrait, {loader as portraitLoader} from './pages/Portrait'
-import ApplicationsEtOutils from './pages/ApplicationsEtOutils'
+import ApplicationsEtOutils, {loader as slideLoader} from './pages/ApplicationsEtOutils'
 import Contact from './pages/Contact'
 import Deontologie from './pages/Déontologie'
 import MentionsLegales from './pages/MentionsLégales'
@@ -30,7 +30,8 @@ const router = createBrowserRouter([{ // Création du router.
       },
       {
         path : 'applications-et-outils',
-        element : <ApplicationsEtOutils/>
+        element : <ApplicationsEtOutils/>,
+        loader : slideLoader
       },
       {
         path : 'contact',
