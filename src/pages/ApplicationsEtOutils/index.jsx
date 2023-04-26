@@ -1,6 +1,5 @@
 import { useLoaderData } from "react-router-dom"
 import "./applicationsEtOutils.scss"
-import { useLoaderData } from "react-router-dom"
 import Slider from "../../components/slider"
 import Questions from "../../components/questions"
 
@@ -19,9 +18,5 @@ export default function ApplicationsEtOutils() {
     )
 }
 export async function loader() {
-    return (await import("../../data/slide.json")).default // chargement au moment ou on l'appel
-}
-
-export async function loader1() {
-    return (await import("../../data/questionary.json")).default // chargement au moment ou on l'appel
+    return (await import("../../data/slide.json"), await import("../../data/questionary.json")).default // chargement au moment ou on l'appel
 }
