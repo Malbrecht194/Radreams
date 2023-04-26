@@ -1,9 +1,15 @@
+@import "../../scss/utils/variables.scss";
 .portraitBanner{
     rotate: 30deg;
 }
 .presentation{
-    margin-top: -3rem;
+    margin: -3rem 3rem 3rem;
+    color: map-get($map:$colors , $key:couleurPrimaire );
+    font-size: x-large;
     &__praticiens{
         margin-top: 5rem;
+        &__content{
+            margin-top: 13rem;
+        }
     }
 }
