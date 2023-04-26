@@ -10,9 +10,9 @@ export default function Accueil() {
     const tools = useLoaderData() // loader pour charger les textes des outils de l'acccueil
     return (
         <>
+            <BigBanner bigBannerImg={bigBannerImg} bigBannerAlt="Bandeau d'accueil avec coquillage" />
             <section className="introduction">
-                <BigBanner bigBannerImg = {bigBannerImg} bigBannerAlt="Bandeau d'accueil avec coquillage"/>
-                <Banner bannerTitle="RA DREAMS VOUS SOUHAITE LA BIENVENUE!"/>
+                <Banner bannerTitle="RA DREAMS VOUS SOUHAITE LA BIENVENUE!" />
 
             </section>
 

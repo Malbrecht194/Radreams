@@ -7,7 +7,7 @@ import "./index.scss"
 import Error404 from './pages/Error404'
 import DefaultLayout from './layouts/default'
 import Accueil, {loader as homeLoader} from './pages/Accueil'
-import Portrait from './pages/Portrait'
+import Portrait, {loader as portraitLoader} from './pages/Portrait'
 import ApplicationsEtOutils from './pages/ApplicationsEtOutils'
 import Contact from './pages/Contact'
 import Deontologie from './pages/Déontologie'
@@ -25,7 +25,8 @@ const router = createBrowserRouter([{ // Création du router.
       },
       {
         path : 'portrait',
-        element : <Portrait/>
+        element : <Portrait/>,
+        loader : portraitLoader
       },
       {
         path : 'applications-et-outils',

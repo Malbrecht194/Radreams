@@ -8,7 +8,7 @@ export default function Error404() {
         <>
             <Header/>
             <section className="error404">
-                <h3 className="error404__error prestage">erreur 404</h3>
+                <h3 className="error404__error prestage">ERREUR 404</h3>
                 <p className="error404__message aref">Cette page n'exite pas! Vous pouvez retourner sur la page <Link to="/" className="aref">d'Accueil.</Link></p>
             </section>
             <Footer/>
