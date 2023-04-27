@@ -19,7 +19,11 @@
         object-fit: cover;
     }
 
+    &__title{
+        font-size: x-large;
+    }
     &__content {
+        font-size: larger;
         height: 30%;
         text-align: justify;
     }

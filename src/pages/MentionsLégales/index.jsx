@@ -12,7 +12,7 @@ export default function MentionsLegales() {
                 </p>
                 <h3 className="mentionsContainer__title prestage">2. Éditeur</h3>
                 <p className="mentionsContainer__content aref">
-                    La Sasa RA Dreams, immatriculée sous le numéro 909 675 779 RCS Angoulême, dont le siège social est situé à : les buis 16410 TORSAC
+                    RAdreams Sas, immatriculée sous le numéro 909 675 779 RCS Angoulême, dont le siège social est situé à : les buis 16410 TORSAC
                     Adresse électronique : contact@radreams.com <br />
                     Représentée par Romain ALBRECHT, Agnès MICHAUD.
                 </p>

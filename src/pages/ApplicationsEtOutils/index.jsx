@@ -2,6 +2,8 @@ import { useLoaderData } from "react-router-dom"
 import "./applicationsEtOutils.scss"
 import Slider from "../../components/slider"
 import Questions from "../../components/questions"
+import BannerPicture from "../../components/bannerPicture"
+import bannerImg from "../../assets/images/transitionImagePotterie.jpeg"
 
 export default function ApplicationsEtOutils() {
     const slideData = useLoaderData()
@@ -9,11 +11,17 @@ export default function ApplicationsEtOutils() {
     return (
         <>
             <Slider data={slideData} />
-            {questionaryData.map((data, index3) => (
-                <section key={index3}>
-                    <Questions data={data} />
-                </section>
-            ))}
+            <section className="toolsSection">
+                <BannerPicture bannerPicture={bannerImg} bannerPictureTitle='NOS OUTILS'/>
+            </section>
+            <section className="questionarySection">
+                {questionaryData.map((data, index3) => (
+                    <section key={index3}>
+                        <Questions data={data} />
+                    </section>
+                ))}
+            </section>
+
         </>
     )
 }

@@ -5,7 +5,8 @@ import BannerRotated from "../../components/bannerRotated";
 import { useLoaderData } from "react-router-dom";
 import WorkCard from "../../components/workCard";
 import WorkCardReversed from "../../components/workCardReversed";
-
+import BannerPicture from "../../components/bannerPicture";
+import bannerImg from "../../assets/images/bandeauPortrait.jpeg";
 export default function Portrait() {
     const workData = useLoaderData()
     return (
@@ -40,6 +41,10 @@ export default function Portrait() {
                         Nous avons investi en nous <span className="gras aref">et vous ? Êtes vous prêt à investir en vous ?</span>
                     </p>
                 </div>
+            </section>
+            <section className="approche">
+                <BannerPicture bannerPicture={bannerImg} bannerPictureTitle="NOTRE APPROCHE" />
+                <p>TEXTE</p>
             </section>
         </>
     )
