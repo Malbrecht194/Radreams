@@ -1,6 +1,6 @@
 [
     {
-        "id": "sophrologie",
+        "id": "Sophrologie",
         "questions": [
             {
                 "title": "Qu’est-ce que la sophrologie ?",
@@ -19,7 +19,7 @@
         ]
     },
     {
-        "id": "coaching",
+        "id": "Coaching",
         "questions": [
             {
                 "title": "Qu’est-ce que le coaching ?",
@@ -38,7 +38,7 @@
         ]
     },
     {
-        "id": "hypnose",
+        "id": "Hypnose",
         "questions": [
             {
                 "title": "Qu’est-ce que l’hypnose ?",
