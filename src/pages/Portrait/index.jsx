@@ -2,11 +2,12 @@ import BigBanner from "../../components/bigBanner"
 import "./portrait.scss"
 import portraitImg from "../../assets/images/Bandeau notre histoire.jpg";
 import BannerRotated from "../../components/bannerRotated";
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import WorkCard from "../../components/workCard";
 import WorkCardReversed from "../../components/workCardReversed";
 import BannerPicture from "../../components/bannerPicture";
 import bannerImg from "../../assets/images/bandeauPortrait.jpeg";
+import Button from "../../components/Button";
 export default function Portrait() {
     const workData = useLoaderData()
     return (
@@ -17,6 +18,7 @@ export default function Portrait() {
                 <div className="presentation__praticiens">
                     <WorkCard data={workData[0]} />
                     <WorkCardReversed data={workData[1]} />
+                    <Button buttonTitle="Prendre RDV" buttonLink='/contact' />
                     <p className="presentation__praticiens__content aref">
                         Dès la plus tendre enfance, nous avons tous entendu au moins une fois, avec les meilleurs intentions qui soient : <br /><br />
 
@@ -40,11 +42,18 @@ export default function Portrait() {
 
                         Nous avons investi en nous <span className="gras aref">et vous ? Êtes vous prêt à investir en vous ?</span>
                     </p>
+                    <Button buttonTitle="Prendre RDV" buttonLink='/contact' />
                 </div>
             </section>
             <section className="approche">
                 <BannerPicture bannerPicture={bannerImg} bannerPictureTitle="NOTRE APPROCHE" />
-                <p>TEXTE</p>
+                <p className="approche__texte aref">
+                    Elle est avant tout <span className="gras aref">holistique</span>. Pour nous, l’Humain, dans sa globalité, est <span className="gras aref">au centre de notre pratique</span>. <br />
+                    Sans cesse, nous testons, éprouvons et perfectionnons nos pratiques au point de transformer notre vie quotidienne en « laboratoire d’expérimentation » grandeur nature. Par ce biais, auquel s’ajoute une perpétuelle formation continue, vous bénéficiez de toutes nos avancées. <br />
+                    Dans <span className="gras aref">notre approche, vous êtes acteur investi, engagé, responsable et autonome</span> de votre accompagnement; c’est alors que la <span className="gras aref">Transformation</span> recherchée peut <span className="gras aref">s’opérer</span>. <br />
+                    Dans les règles de l’art, de <Link to="/deontologie"><span className="gras aref approche__texte__link">l’éthique</span></Link> et de la <Link to="/deontologie"><span className="gras aref approche__texte__link">déontologie</span></Link>, vous êtes accueilli avec <span className="gras aref">respect, bienveillance</span>, sans jugement, en prenant en compte votre <span className="gras aref">individualité, capacité et limites</span> y compris dans votre <span className="gras aref">fragilité</span>.
+                </p>
+                <Button buttonTitle="Prendre RDV" buttonLink='/contact' />
             </section>
         </>
     )

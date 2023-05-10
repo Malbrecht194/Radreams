@@ -15,10 +15,9 @@
     &__question {
         display: flex;
         flex-direction: column;
-        row-gap: 1rem;
         justify-content: center;
         padding: 1rem 1rem 0;
-        margin-bottom: 2rem;
+        margin-bottom: 5px;
         background-color: #e2c573;
         border: solid 1px map-get($map: $colors, $key: couleurPrimaire);
 
@@ -43,11 +42,11 @@
             font-size: larger;
             max-height: 0;
             overflow: hidden;
-            transition: max-height 0.2s ease-in-out;
+            transition: max-height 0.3s ease-in-out;
 
             &.showContent {
                 max-height: 200px;
-                transition: max-height 0.3s ease;
+                transition: max-height 0.4s ease;
             }
         }
     }

@@ -3,14 +3,14 @@
     rotate: 30deg;
 }
 .presentation{
-    margin: -3rem 3rem 3rem;
+    margin: -3rem 3rem 0;
     color: map-get($map:$colors , $key:couleurPrimaire );
     font-size: x-large;
     &__praticiens{
-        margin-top: 3rem;
-        &__content{
-            margin-top: 13rem;
-        }
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+        margin: 3rem 0 3rem;
     }
 }
 
@@ -18,4 +18,14 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    color: map-get($map:$colors , $key:couleurPrimaire );
+    font-size: x-large;
+    margin-bottom: 3rem;
+    &__texte{
+        margin: 0 3rem 3rem;
+        &__link{
+            text-decoration: underline;
+        }
+    }
+    
 }

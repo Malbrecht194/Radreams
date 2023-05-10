@@ -4,6 +4,7 @@ import Slider from "../../components/slider"
 import Questions from "../../components/questions"
 import BannerPicture from "../../components/bannerPicture"
 import bannerImg from "../../assets/images/transitionImagePotterie.jpeg"
+import Button from "../../components/Button"
 
 export default function ApplicationsEtOutils() {
     const slideData = useLoaderData()
@@ -20,6 +21,7 @@ export default function ApplicationsEtOutils() {
                         <Questions data={data} />
                     </section>
                 ))}
+                <Button buttonTitle="Prendre RDV" buttonLink='/contact' />
             </section>
 
         </>
