@@ -26,6 +26,10 @@ export default function Accueil() {
                 <Button className='toolsCards__button' buttonTitle="Prendre RDV" buttonLink='/contact' />
             </section>
 
+            <section className="testimony">
+
+            </section>
+
         </>
     )
 }
