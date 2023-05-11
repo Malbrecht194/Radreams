@@ -1,4 +1,5 @@
 import BigBanner from "../../components/bigBanner"
+import Button from "../../components/Button"
 import "./portrait.scss"
 import portraitImg from "../../assets/images/Bandeau notre histoire.jpg";
 import BannerRotated from "../../components/bannerRotated";
@@ -44,7 +45,15 @@ export default function Portrait() {
             </section>
             <section className="approche">
                 <BannerPicture bannerPicture={bannerImg} bannerPictureTitle="NOTRE APPROCHE" />
-                <p>TEXTE</p>
+                <p className="approche__text aref">Elle est avant tout <span className="gras aref">holistique</span>. Pour nous, l’Humain, dans sa globalité, est <span className="gras aref">au centre de notre pratique.</span><br></br>
+
+                Sans cesse, nous testons, éprouvons et perfectionnons nos pratiques au point de transformer notre vie quotidienne en « laboratoire d’expérimentation » grandeur nature. Par ce biais, auquel s’ajoute une perpétuelle formation continue, vous bénéficiez de toutes nos avancées.<br></br>
+
+                Dans <span className="gras aref">notre approche, vous êtes acteur investi, engagé, responsable et autonome</span> de votre accompagnement; c’est alors que la <span className="gras aref">Transformation</span> recherchée peut s’opérer.<br></br>
+
+                Dans les règles de l’art, de <span className="gras aref">l’éthique</span> et de la <span className="gras aref">déontologie</span>, vous êtes accueilli avec <span className="gras aref">respect, bienveillance</span>, sans jugement, en prenant en compte votre <span className="gras aref">individualité, capacité</span> et <span className="gras aref">limites</span> y compris dans votre <span className="gras aref">fragilité.</span></p>
+
+                <Button className='toolsCards__button' buttonTitle="Prendre RDV" buttonLink='/contact' />
             </section>
         </>
     )

@@ -18,4 +18,10 @@
     display: flex;
     flex-direction: column;
     row-gap: 2rem;
+    &__text{
+        margin: 3rem 3rem;
+        color: map-get($map:$colors , $key:couleurPrimaire );
+        font-size: x-large;
+        text-align: justify;
+    }
 }
