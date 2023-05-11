@@ -1,3 +1,28 @@
+@import "../../scss/utils/variables.scss";
+
+.welcome{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: map-get($map: $colors, $key:couleurPrimaire );
+    font-size: x-large;
+    margin: 2rem 3rem 2rem;
+    &__congrat{
+        margin-top: 2rem;
+    }
+    &__contentCenter{
+        text-align: center;
+    }
+    &__contentList{
+        margin: 1rem 0 1rem 1.5rem;
+    }
+    &__img{
+        width: 30rem;
+        margin: 1rem auto 1rem;
+        border-radius: 50%;
+    }
+}
+
 .toolCards {
     display: flex;
     flex-direction: column;
@@ -9,4 +34,8 @@
         gap: 3rem;
         padding:  0 3rem 0;
     }
-    }
+}
+
+.testimony{
+    margin-bottom: 3rem;
+}

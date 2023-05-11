@@ -15,7 +15,7 @@ export default function Questions({ data }) {
 
     return (
         <article className="questionary">
-            <h2 className="questionary__title aref">{data.id}</h2>
+            <h2 className="questionary__title aref" id={data.id}>{data.id}</h2>
             {data.questions.map((question, index0) => (
                 <div className="questionary__question" key={index0}>
                     <div className="questionary__question__title">

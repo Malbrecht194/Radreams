@@ -33,7 +33,7 @@
         width: 35%;
     }
     &__logo{
-        margin-left: 150px;
+        margin-left: 5vw;
         &__text{
             color: map-get($map: $colors, $key:couleurSecondaire );
             font-size: x-large;
